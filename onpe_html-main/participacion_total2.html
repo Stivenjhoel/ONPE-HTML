@@ -1,0 +1,398 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>ONPE - Oficina Nacional de Procesos Electorales</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/fontawesome.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="pull-left logo-onpe">
+          <div class="pull-left">
+            <a href="index.html"><img src="images/onpe-trans.png"></a>
+          </div>
+            
+          <div class="pull-left">
+            <h1>PRESENTACIÓN DE RESULTADOS</h1>
+          </div>
+        </div>
+
+        <div class="pull-right logo">
+          <img src="images/eegg2016-trans.png" width="218" height="35">
+        </div>
+      </div>
+    </header>
+
+    <div id="imprimelo3">
+      <div class="container">
+        <img src="images/f-participacion.jpg" width="1170" height="248" class="img-responsive mg30top">
+
+        <section class="menu navbar-default menu05">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <a name="posicion"></a>
+          <nav class="navbar-collapse bs-navbar-collapse collapse" aria-expanded="false">
+            <ul class="nav navbar-nav">
+              <li class="bt-azul">
+                <a href="./presidenciales.html">PRESIDENCIAL</a>
+              </li>
+              <li class="bt-amarillo">
+                <a href="./actas_ubigeo.html">ACTAS</a>
+              </li>
+              <li class="bt-rojo act-rojo">
+                <a href="./participacion.html">PARTICIPACIÓN CIUDADANA</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <br/><br/><br/><br/>
+
+        <section class="contenedor">
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <div class="menu-interna">
+                <ul>
+                  <li><a href="./participacion.html" class="act-izq">TOTAL</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-9" id="impreso">
+              <div class="contenido-interna">
+                <div class="titulos col-xs-12">
+                  <div class="col-xs-11">
+                    <h3> <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true" style="font-size:19px"></span> SEGUNDA ELECCIÓN PRESIDENCIAL 2016: PARTICIPACIÓN CIUDADANA</h3>
+                  </div>
+
+                  <div class="col-xs-1 oculto-boton-print">
+                    <button onclick="printContent('impreso');"><i class="fa fa-print ico-print"></i></button>
+                  </div>
+                </div>
+                
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <button type="button" class="btn btn-primary" onclick="history.go(-1);"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> REGRESAR</button>
+                      </td>
+                      <td width="60%">&nbsp;</td>
+                      <td>
+                        <button type="button" class="btn btn-primary" onclick="location.href='./generar_datos_participacion_excel.php?tipoCobertura=Nacional&amp;ubigeo=Todos'">REPORTE DETALLADO EN EXCEL</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                          
+                <div class="col-xs-12">
+                  <p class="subtitle">ACTAS CONTABILIZADAS</p>
+                  <div class="col-lg-7 centered">
+                    <div class="col-xs-12 col-md-12 col-lg-12 cont-curv">
+                      <div class="col-xs-3 col-md-1">
+                        <span class="glyphicon glyphicon-ok-circle ico-info" aria-hidden="true"></span>
+                      </div>
+
+                      <div class="col-xs-9 col-md-11">
+                        <ul>
+                          <li>ACTUALIZADO EL 20/06/2016 A LAS 19:16 h </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <br/>
+                </div>
+
+                <div class="col-xs-12 line pbot30">
+                  <div class="col-xs-12 col-md-6">
+                    <img src="./images/imagen-NACIONAL.png" class="img-responsive">
+                  </div>
+
+                  <div class="col-xs-12 col-md-6">
+                    <div class="cont-recto" style="margin-bottom:10px">
+                      Ámbito: Nacional
+                    </div>
+                    <p class="subtitle">ELECTORES HÁBILES 22,017,030</p>
+                    <div id="page-wrap">
+                      <table class="table09_2" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th>PARTICIPACIÓN</th>
+                            <th>AUSENTISMO</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>TOTAL: 17,953,367</td>
+                            <td>TOTAL: 4,063,663</td>
+                          </tr>
+                          <tr>
+                            <td>% TOTAL: 81.543%</td>
+                            <td>% TOTAL: 18.457%</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                </div>
+                
+                <div class="col-xs-12">
+                  <p class="subtitle">Consulta de participación DETALLADO </p>
+                  <div id="page-wrap">
+                    <table class="table21">
+                      <tbody id="resultados">
+                        <tr class="titulo_tabla">
+                          <td>DEPARTAMENTO</td>
+                          <td>TOTAL ASISTENTES</td>
+                          <td>% TOTAL ASISTENTES</td>
+                          <td>TOTAL AUSENTES</td>
+                          <td>% TOTAL AUSENTES</td>
+                          <td>ELECTORES HÁBILES</td>
+                        </tr>
+                        <tr onclick="location.href='./participacion_total.html?id=nacional,AMAZONAS'" onmouseover="this.style.cursor = &quot;pointer&quot;; this.style.color = &quot;grey&quot;" onmouseout="this.style.color = &quot;black&quot;" style="cursor: pointer; color: black;">
+                          <td>AMAZONAS</td>
+                          <td>182,570</td>
+                          <td>67.575%</td>
+                          <td>87,605</td>
+                          <td>32.425%</td>
+                          <td>270,175</td>
+                        </tr>
+                        <tr>
+                          <td>ANCASH</td>
+                          <td>642,563</td>
+                          <td>77.302 %</td>
+                          <td>188,672</td>
+                          <td>22.698 %</td>
+                          <td>831,235</td>
+                        </tr>
+                        <tr>
+                          <td>APURIMAC</td>
+                          <td>205,646</td>
+                          <td>72.300 %</td>
+                          <td>78,790</td>
+                          <td>27.700 %</td>
+                          <td>284,436</td>
+                        </tr>
+                        <tr>
+                          <td>AREQUIPA</td>
+                          <td>888,499</td>
+                          <td>85.791 %</td>
+                          <td>147,155</td>
+                          <td>14.209 %</td>
+                          <td>1,035,654</td>
+                        </tr>
+                        <tr>
+                          <td>AYACUCHO</td>
+                          <td>309,436</td>
+                          <td>73.334 %</td>
+                          <td>112,520</td>
+                          <td>26.666 %</td>
+                          <td>421,956</td>
+                        </tr>
+                        <tr>
+                          <td>CAJAMARCA</td>
+                          <td>741,699</td>
+                          <td>73.452 %</td>
+                          <td>268,076</td>
+                          <td>26.548 %</td>
+                          <td>1,009,775</td>
+                        </tr>
+                        <tr>
+                          <td>CALLAO</td>
+                          <td>640,781</td>
+                          <td>86.135 %</td>
+                          <td>103,147</td>
+                          <td>13.865 %</td>
+                          <td>743,928</td>
+                        </tr>
+                        <tr>
+                          <td>CUSCO</td>
+                          <td>718,771</td>
+                          <td>78.537 %</td>
+                          <td>196,428</td>
+                          <td>21.463 %</td>
+                          <td>915,199</td>
+                        </tr>
+                        <tr>
+                          <td>HUANCAVELICA</td>
+                          <td>188,658</td>
+                          <td>68.743 %</td>
+                          <td>85,782</td>
+                          <td>31.257 %</td>
+                          <td>274,440</td>
+                        </tr>
+                        <tr>
+                          <td>HUANUCO</td>
+                          <td>368,784</td>
+                          <td>70.238 %</td>
+                          <td>156,267</td>
+                          <td>29.762 %</td>
+                          <td>525,051</td>
+                        </tr>
+                        <tr>
+                          <td>ICA</td>
+                          <td>507,511</td>
+                          <td>86.936 %</td>
+                          <td>76,266</td>
+                          <td>13.064 %</td>
+                          <td>583,777</td>
+                        </tr>
+                        <tr>
+                          <td>JUNIN</td>
+                          <td>696,589</td>
+                          <td>79.549 %</td>
+                          <td>179,085</td>
+                          <td>20.451 %</td>
+                          <td>875,674</td>
+                        </tr>
+                        <tr>
+                          <td>LA LIBERTAD</td>
+                          <td>1,045,470</td>
+                          <td>80.888 %</td>
+                          <td>247,018</td>
+                          <td>19.112 %</td>
+                          <td>1,292,488</td>
+                        </tr>
+                        <tr>
+                          <td>LAMBAYEQUE</td>
+                          <td>732,918</td>
+                          <td>82.410 %</td>
+                          <td>156,437</td>
+                          <td>17.590 %</td>
+                          <td>889,355</td>
+                        </tr>
+                        <tr>
+                          <td>LIMA</td>
+                          <td>6,542,575</td>
+                          <td>86.305 %</td>
+                          <td>1,038,183</td>
+                          <td>13.695 %</td>
+                          <td>7,580,758</td>
+                        </tr>
+                        <tr>
+                          <td>LORETO</td>
+                          <td>429,794</td>
+                          <td>68.167 %</td>
+                          <td>200,704</td>
+                          <td>31.833 %</td>
+                          <td>630,498</td>
+                        </tr>
+                        <tr>
+                          <td>MADRE DE DIOS</td>
+                          <td>76,302</td>
+                          <td>79.866 %</td>
+                          <td>19,236</td>
+                          <td>20.134 %</td>
+                          <td>95,538</td>
+                        </tr>
+                        <tr>
+                          <td>MOQUEGUA</td>
+                          <td>114,431</td>
+                          <td>85.539 %</td>
+                          <td>19,346</td>
+                          <td>14.461 %</td>
+                          <td>133,777</td>
+                        </tr>
+                        <tr>
+                          <td>PASCO</td>
+                          <td>135,788</td>
+                          <td>73.376 %</td>
+                          <td>49,269</td>
+                          <td>26.624 %</td>
+                          <td>185,057</td>
+                        </tr>
+                        <tr>
+                          <td>PIURA</td>
+                          <td>1,032,973</td>
+                          <td>81.558 %</td>
+                          <td>233,584</td>
+                          <td>18.442 %</td>
+                          <td>1,266,557</td>
+                        </tr>
+                        <tr>
+                          <td>PUNO</td>
+                          <td>713,655</td>
+                          <td>83.128 %</td>
+                          <td>144,849</td>
+                          <td>16.872 %</td>
+                          <td>858,504</td>
+                        </tr>
+                        <tr>
+                          <td>SAN MARTIN</td>
+                          <td>438,113</td>
+                          <td>77.314 %</td>
+                          <td>128,553</td>
+                          <td>22.686 %</td>
+                          <td>566,666</td>
+                        </tr>
+                        <tr>
+                          <td>TACNA</td>
+                          <td>216,940</td>
+                          <td>85.570 %</td>
+                          <td>36,584</td>
+                          <td>14.430 %</td>
+                          <td>253,524</td>
+                        </tr>
+                        <tr>
+                          <td>TUMBES</td>
+                          <td>129,285</td>
+                          <td>82.811 %</td>
+                          <td>26,835</td>
+                          <td>17.189 %</td>
+                          <td>156,120</td>
+                        </tr>
+                        <tr>
+                          <td>UCAYALI</td>
+                          <td>253,616</td>
+                          <td>75.282 %</td>
+                          <td>83,272</td>
+                          <td>24.718 %</td>
+                          <td>336,888</td>
+                        </tr>
+                        <tr>
+                          <td>TOTALES</td>
+                          <td>17,953,367</td>
+                          <td>81.543 %</td>
+                          <td>4,063,663</td>
+                          <td>18.457 %</td>
+                          <td>22,017,030</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </section>
+      </div>	
+    </div>
+
+    <div id="divDetalle"></div>
+    <br/>
+
+    <footer class="footer-inside">
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-12 direc01">
+              <span>CONTÁCTENOS</span>
+              <p>Jr. Washington 1894, Cercado de Lima </p>
+              <p>Correo electrónico: <a href="#">informes@onpe.gob.pe</a></p>
+              <p>Central Telefónica: 417 - 0630 / Lunes a Viernes 08:30 - 16:30 hrs</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+      <script src="js/participacion_total.js"></script>
+  </body>
+</html>
